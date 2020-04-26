@@ -1,0 +1,12 @@
+extends ../layouts/common
+
+block content
+  h1 Update user
+
+  form(action="/users/update", method="POST")
+    .form-group
+      label.mr-2 New name
+      input(type="hidden", name="id", value= id)
+      input.form-control(type="text", name="name")
+
+    button.btn.btn-primary Update

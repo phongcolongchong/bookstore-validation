@@ -1,0 +1,23 @@
+extends ../layouts/common
+
+block content
+  h1 Books
+  
+  .form-group
+    a.btn.btn-primary(type="button", href="/books/create") Add book
+
+  ul.list-unstyled
+    each book in books
+      li.media
+        img.mr-3(src="/book.png")
+        .media-body
+          span
+            strong= book.title
+            span &nbsp;
+            a(href="/books/" + book.id + "/update") Update
+            span &nbsp;
+            a(href="/books/" + book.id + "/delete") Delete
+            br
+            span= book.description
+            br
+            br

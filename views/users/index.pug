@@ -1,0 +1,24 @@
+extends ../layouts/common
+
+block content
+  div(class="m-3")
+    h1 Users
+    .form-group
+      a(type="button", class="btn btn-primary", href="/users/create") Add user
+
+    table.table
+      thead.thead-light
+        tr 
+          th User
+          th Update user
+          th Delete user
+
+      tbody
+        each user in users
+          tr
+            td= user.name
+            td
+              a(href="/users/" + user.id + "/update") Update
+            td
+              a(href="/users/" + user.id + "/delete") Delete
+    
