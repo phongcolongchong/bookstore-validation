@@ -1,0 +1,66 @@
+{
+  "books": [
+    {
+      "title": "JavaScript",
+      "description": "This is a programming language that can do many things.",
+      "id": "1c5FQWHHz"
+    },
+    {
+      "title": "ExpressJS",
+      "description": "This is a framework using JavaScript language, run in nodeJS environment.",
+      "id": "Z-vQFqyNA"
+    },
+    {
+      "title": "HTML",
+      "description": "Hyper Text Markup Language",
+      "id": "x6L8-dDkS"
+    }
+  ],
+  "users": [
+    {
+      "name": "Minh",
+      "id": "cAbZ0lM1X"
+    },
+    {
+      "name": "Phong",
+      "id": "rnZVqVGtR"
+    },
+    {
+      "name": "Nam",
+      "id": "Yif2xoGdE"
+    },
+    {
+      "name": "Vy",
+      "id": "fPutp01s0"
+    },
+    {
+      "name": "Long",
+      "id": "MF7XlMlhz"
+    }
+  ],
+  "transactions": [
+    {
+      "userId": "Yif2xoGdE",
+      "bookId": "Z-vQFqyNA",
+      "id": "lw7BNLjv_",
+      "isComplete": true
+    },
+    {
+      "userId": "rnZVqVGtR",
+      "bookId": "1c5FQWHHz",
+      "id": "5pDHmYY0w",
+      "isComplete": true
+    },
+    {
+      "userId": "cAbZ0lM1X",
+      "bookId": "1c5FQWHHz",
+      "id": "VW42YkCOr"
+    },
+    {
+      "userId": "cAbZ0lM1X",
+      "bookId": "x6L8-dDkS",
+      "id": "AGJMx2fIz",
+      "isComplete": true
+    }
+  ]
+}

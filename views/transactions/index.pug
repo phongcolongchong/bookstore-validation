@@ -1,0 +1,43 @@
+extends ../layouts/common
+
+block content
+  div(class="m-3")
+    h1 Transactions
+
+    a(type="button" class="btn btn-primary mb-3", href="/transactions/create") Create transaction
+
+    table.table
+      thead.thead-light
+        tr
+          th User
+          th Book
+          th isComplete
+          th Delete
+      tbody    
+        each transaction in transactions
+          tr
+            each user in users
+              if(user.id === transaction.userId)
+                td= user.name
+
+            each book in books
+              if(book.id === transaction.bookId)
+                td= book.title
+
+            td
+              span= transaction.isComplete === true ? "true" : "false"
+              span &nbsp;
+              a(href="/transactions/" + transaction.id + "/complete") Complete
+
+            td
+              a(href="/transactions/" + transaction.id + "/delete") Remove
+  
+        
+          
+          
+          
+        
+    
+    
+      
+      
